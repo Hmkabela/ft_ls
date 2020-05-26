@@ -4,16 +4,15 @@ LIBFT_PATH = ./libft/
 
 SRC_PATH = ./srcs/
 
-SRCS = parsing.c \
-    errors.c \
-    store.c \
-    sort.c \
-    print.c \
+SRCS = flags.c \
+    long.c \
+    sorting.c \
+	printing.c \
     main.c \
 
 FLAGS = -Wall -Werror -Wextra
 
-INC = -I ./includes/ft_ls.h -I $(LIBFT_PATH)libft.h
+INC = -I ./srcs/ft_ls.h -I $(LIBFT_PATH)libft.h
 
 SRC = $(addprefix $(SRC_PATH), $(SRCS))
 
