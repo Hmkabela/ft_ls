@@ -28,7 +28,6 @@ void    forbidden(char s);
 char    *get_flags(int ac, char **av);
 char    *param(int ac, char **av);
 void    ft_long(char *str);
-
 typedef struct		a_list
 {
 	void			*val;
@@ -45,5 +44,6 @@ void pnh(l_list *lst);
 void pnLong(l_list *lst);
 void pwLong(l_list *lst);
 int     recheck(char *s, char c);
+int count_blocks(l_list *lst);
 
 #endif

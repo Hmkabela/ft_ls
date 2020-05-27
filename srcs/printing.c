@@ -6,7 +6,7 @@ void pwl(l_list *lst)
 	while (temp->next != NULL)
 	{
 		ft_putstr(temp->val);
-		ft_putchar(' ');
+		ft_putchar('\n');
 		temp = temp->next;
 	}
 }

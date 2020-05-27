@@ -32,7 +32,7 @@ void bs(l_list *n1, int num)
 		return;
 	i = 0;
 	n2 = n1;
-	while(i < 1000)
+	while(i < 100000)
 	{
 		if (n2->next->val == NULL)
 		{
@@ -59,9 +59,9 @@ int    timeCompare(char *s1, char *s2)
 
   stat(s1, &time1);
   stat(s2, &time2);
-  if (time1.st_ctime == time2.st_ctime)
-    return (time1.st_ctimespec.tv_nsec < time2.st_ctimespec.tv_nsec);
-  return (time1.st_ctime < time2.st_ctime);
+  if (time1.st_mtime == time2.st_mtime)
+    return (time1.st_mtimespec.tv_nsec < time2.st_mtimespec.tv_nsec);
+  return (time1.st_mtime < time2.st_mtime);
 }
 int    rtimeCompare(char *s1, char *s2)
 {
@@ -70,9 +70,9 @@ int    rtimeCompare(char *s1, char *s2)
 
   stat(s1, &time1);
   stat(s2, &time2);
-  if (time1.st_ctime == time2.st_ctime)
-    return (time1.st_ctimespec.tv_nsec > time2.st_ctimespec.tv_nsec);
-  return (time1.st_ctime > time2.st_ctime);
+  if (time1.st_mtime == time2.st_mtime)
+    return (time1.st_mtimespec.tv_nsec > time2.st_mtimespec.tv_nsec);
+  return (time1.st_ctime > time2.st_mtime);
 }
 
 void  sortTime(l_list *head,int n)
