@@ -8,6 +8,7 @@ SRCS = flags.c \
     long.c \
     sorting.c \
 	printing.c \
+	dash_R.c \
     main.c \
 
 FLAGS = -Wall -Werror -Wextra

@@ -35,6 +35,7 @@ int main(int ac, char **av)
         ft_putstr(": No such file or directory");
         exit(1);
     }
+	dashR(flags,src);
     create(dir,dp, head);
 	bs(head,1);
 	all = (recheck(flags,'a') == 1) ? 1 : -1;

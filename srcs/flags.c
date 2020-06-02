@@ -18,11 +18,7 @@ char	*get_flags(int ac, char **av)
 	int e;
 	int pos;
 	int i;
-	int i2;
-
 	e = 1;
-	i = 0;
-	i2 = 0;
 	pos = 0;
 	flags = (char *)malloc(sizeof(char) * 5);
 	while (e < ac)
@@ -42,7 +38,6 @@ char	*get_flags(int ac, char **av)
 		}
 		e++;
 	}
-	flags[pos] = '\0';
 	return (flags);
 }
 

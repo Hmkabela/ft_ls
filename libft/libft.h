@@ -83,6 +83,6 @@ typedef struct		t_list
 {
 	void			*val;
 	struct t_list	*next;
-}					v_list;
+}					g_list;
 
 #endif

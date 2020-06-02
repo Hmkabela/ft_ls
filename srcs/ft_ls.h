@@ -38,6 +38,9 @@ void swap(char *a, char *b);
 void bs(l_list *n1, int num);
 int    timeCompare(char *s1, char *s2);
 int    rtimeCompare(char *s1, char *s2);
+void    dr(char *tmp,DIR *dir, struct dirent *dp, l_list *head, int *num);
+void dash_R(char *tmp, int *num);
+void    dr2(struct dirent *dp,char *tmp, char *str, int *n);
 void  sortTime(l_list *head,int n);
 void pwl(l_list *lst);
 void pnh(l_list *lst);
@@ -45,5 +48,7 @@ void pnLong(l_list *lst);
 void pwLong(l_list *lst);
 int     recheck(char *s, char c);
 int count_blocks(l_list *lst);
+void    dashR(char *flags, char *src);
+void    pe(char *s);
 
 #endif
